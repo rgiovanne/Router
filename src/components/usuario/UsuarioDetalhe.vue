@@ -2,9 +2,11 @@
     <div class="usuario-detalhe">
         <h3>Usuário Detalhe</h3>
         <p><strong>Código: </strong>{{id}}</p>
+            <!-- :to="`/usuario/${id}/editar`" -->
         <router-link tag="button" primario
-            :to="`/usuario/${id}/editar`"
-            hash: "#rodape">
+            :to="{ name: 'editarUsuario', params:{id},
+                query: {completo: false, lingua: 'pt'},
+                hash: '#rodape'}">
             Editar
         </router-link>
     </div>

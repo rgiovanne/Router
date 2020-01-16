@@ -13,7 +13,8 @@ export default {
     
     methods:{
         irParaInicio(){
-            this.$router.push('/usuario')
+            // this.$router.push('/usuario')
+            this.$router.push({name: 'inicio'})
         }
     }
 }
